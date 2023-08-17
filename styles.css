@@ -226,7 +226,7 @@ footer {
 	height: 200px;
 	border-radius: 50%;
 	/* background-color:#0A6EBD; */
-  background-color:#c286d3;
+  background-color:#d3c986;
   position: absolute;
   top: 50%;
   right: 0;
@@ -238,7 +238,7 @@ footer {
 	height: 200px;
 	border-radius: 50%;
 	/* background-color:#0A6EBD; */
-  background-color:#deaa95;
+  background-color:#de9e95;
   position: absolute;
   top: 50%;
   left: 0;
@@ -273,7 +273,7 @@ footer {
   background-position: 0px 0px, 104px 104px;
   background-size: 204px 204px;
   background-color: #E7CEA6; */
-  background: linear-gradient(to right, #c286d3, #f4e9f7);
+  background: linear-gradient(to right, #d3c986, #f7f6e9);
 }
 .gradient-right {
   /* background-image: 
@@ -282,7 +282,7 @@ footer {
   background-position: 0px 0px, 104px 104px;
   background-size: 204px 204px;
   background-color: #edddc6; */
-  background: linear-gradient(to left, #deaa95, #f7efec);
+  background: linear-gradient(to left, #de9e95, #f7edec);
 }
 .gradient-bottom {
   /* background-image: 
@@ -291,7 +291,22 @@ footer {
   background-position: 0px 0px, 104px 104px;
   background-size: 204px 204px;
   background-color: #e0ceb6 ; */
-  background: linear-gradient(to top, #de95c2, #f7ecf4);
+  background: linear-gradient(to top, #9595de, #edecf7);
+}
+#contact-info {
+  /* text-align: center; */
+  padding-top: -300px;
+  width: 500px;
+	height: 500px;
+  margin: auto;
+  margin-top: -100px;
+	border-radius: 50%;
+  background: linear-gradient(to top, #c286d3, #f4e9f7);
+/*   
+  display: flex; */
+  justify-content: center;
+  align-items: center;
+  
 }
 .dark {
   background-color: #262626;
@@ -311,7 +326,7 @@ footer {
   padding-top: 10%;
 } */
 #nav-list ul {
-  height: 40%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -427,7 +442,7 @@ footer {
     grid-column: 2 / 3; */
 }
 #banner-div {
-    border-bottom: 2px solid rgb(255, 255, 255);    
+    /* border-bottom: 2px solid rgb(255, 255, 255);     */
     grid-row: 3 / 4;
     grid-column: 3 / 4;
     font-family: 'Inknut Antiqua', serif;
@@ -437,24 +452,29 @@ footer {
 }
 #banner {
   font-size: 45px;
-  color: #0A6EBD
+  color: #0A6EBD;
+  text-decoration: underline white 2px;
 }
 #project-titles-div {
     grid-row: 4 / 5;
     grid-column: 3 / 4;
     visibility: hidden;
-    padding-left: 5rem;
+    padding: 2rem 0 0 1rem;
 }
 .project {
-    display: block;
-    
     display: flex;
     align-items: start;
+    padding: none;
+}
+h4{
+  margin: 1rem;
 }
 .project-title {
     cursor: pointer;
     /* margin: 5rem; */
     flex-wrap: nowrap;
+    text-decoration: underline;
+    font-size: 1.25rem;
 }
 /* .project-title:hover {
   display: block;
@@ -481,31 +501,19 @@ footer {
   font-size: 1.75rem;
 }
 .website-link {
+  text-decoration: underline 2px;
+  color:#274a7c;
+  text-shadow: 1px 1px 2px #b1c6df;
   /* position:absolute;
   right: 6rem; */
   /* filter: blur(4px); */
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   /* text-decoration: none; */
 }
-.website-link:hover {
+/* .website-link:hover {
   -webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-#contact-info {
-  /* text-align: center; */
-  padding-top: -300px;
-  width: 500px;
-	height: 500px;
-  margin: auto;
-  margin-top: -100px;
-	border-radius: 50%;
-  background: linear-gradient(to top, #de95c2, #f7ecf4);
-/*   
-  display: flex; */
-  justify-content: center;
-  align-items: center;
-  
-}
+} */
 #links-div {
   /* width: 100%;
   height: 100%;
@@ -529,6 +537,10 @@ footer {
 #contact-links a:hover {
     cursor: pointer;
 }
+/* .contact-link {
+  color:#efe9de;
+  text-shadow: 1px 2px 0 black;
+} */
 #site-name {
   font-size: 15px;
   color: white;
@@ -1369,14 +1381,14 @@ footer {
 	33% {
 	  transform: scale(0.87);
 	  animation-timing-function: ease-in;
-    background: #deaa95;
+    background: #de9e95;
 	}
 	45% {
 	  transform: scale(1);
 	  animation-timing-function: ease-out;
 	}
   66% {
-    background: #de95c2;
+    background: #c286d3;
   }
   100% {
     background: #d3b686;

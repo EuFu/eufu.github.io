@@ -61,19 +61,19 @@ const styleMap = [
     },
   {
     "title": "about", 
-    "circle": circleLeft,
-    "bar": barLeft,
-    "entrance": "bounce-in-left",
-    "exit": "slide-out-left",
-    "gradient": "gradient-left"
+    "circle": circleRight,
+    "bar": barRight,
+    "entrance": "bounce-in-right",
+    "exit": "slide-out-right",
+    "gradient": "gradient-right"
   },
   {
    "title": "projects", 
-   "circle": circleRight,
-   "bar": barRight,
-   "entrance": "bounce-in-right",
-   "exit": "slide-out-right",
-   "gradient": "gradient-right"
+   "circle": circleLeft,
+   "bar": barLeft,
+   "entrance": "bounce-in-left",
+   "exit": "slide-out-left",
+   "gradient": "gradient-left"
   },
   {
     "title": "contact",

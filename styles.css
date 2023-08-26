@@ -4,8 +4,6 @@ html {
 }
 body {
     margin: 0;
-    padding: none;
-    margin: none;
     position: relative;
 }
 section {
@@ -34,44 +32,10 @@ footer {
     text-align: right;
     bottom: 1rem;
     margin-right: 2rem;
-    /* bottom: 0; */
-
 }
 #background {
   background-color:#262626
 }
-
-
-
-/* Use these custom variables... */
-/* :root {
-  --polka-bg-image:
-    radial-gradient(rgb(255, 255, 255) 37.2%, transparent 37.2%),
-    radial-gradient(rgb(255, 255, 255) 37.2%, transparent 37.2%);
-  --polka-bg-position: 0px 0px, 104px 104px;
-  --polka-bg-size: 208px 208px;
-  --polka-bg-color: rgb(255, 51, 51);
-} */
-
-/* ...or add this class to an element */
-.polka {
-  /* background-image: 
-    radial-gradient(#e0ceb6 37.2%, transparent 37.2%),
-    radial-gradient(#edddc6 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #E7CEA6; */
-  /* background-image: 
-    radial-gradient(#e2b69f 37.2%, transparent 37.2%),
-    radial-gradient(#e2dd9f 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #E7CEA6;
-  backdrop-filter: blur(10px); */
-}
-/* #background {
-  background-color: #c9b38b;
-} */
 #main {
     width: 100vw;
     height: 100vh;
@@ -86,7 +50,7 @@ footer {
     color: #274a7c;
     /* opacity: 0.8; */
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 }
 #main-container {
   /* background-color: #e9dfcf; */
@@ -258,39 +222,15 @@ footer {
   overflow: visible;
 }
 .gradient-top {
-  /* background-image: 
-    radial-gradient(#e0ceb6 37.2%, transparent 37.2%),
-    radial-gradient(#edddc6 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #E7CEA6; */
   background: linear-gradient(to bottom, #d3b686, #f7f1e9);
 }
 .gradient-left {
-  /* background-image: 
-    radial-gradient(#e0ceb6 37.2%, transparent 37.2%),
-    radial-gradient(#edddc6 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #E7CEA6; */
   background: linear-gradient(to right, #d3c986, #f7f6e9);
 }
 .gradient-right {
-  /* background-image: 
-    radial-gradient(#E7CEA6 37.2%, transparent 37.2%),
-    radial-gradient(#e0ceb6 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #edddc6; */
   background: linear-gradient(to left, #de9e95, #f7edec);
 }
 .gradient-bottom {
-  /* background-image: 
-    radial-gradient(#edddc6 37.2%, transparent 37.2%),
-    radial-gradient(#E7CEA6 37.2%, transparent 37.2%);
-  background-position: 0px 0px, 104px 104px;
-  background-size: 204px 204px;
-  background-color: #e0ceb6 ; */
   background: linear-gradient(to top, #9595de, #edecf7);
 }
 #contact-info {
@@ -658,9 +598,6 @@ h4{
 .color-change-3x {
 	animation: color-change-3x 3s linear infinite alternate both;
 }
-
-
-
 
 /* KEYFRAMES
 

@@ -1,28 +1,46 @@
 /*******--------- CELLPHONES & SMALL SCREENS ---------*******/
 @media (max-width: 600px){
+  body {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+section {
+  position: relative;
+  margin: 0;
+  padding: 0
+}
     footer {
-        grid-row: 5/6;
+        grid-row: 6/7;
         grid-column: 3/4;
         margin-right: 0;
     }
     #main {
-      grid-template-rows: 5% 90% 5%;
-      grid-template-columns: 5% 90% 5%;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
     }
     #main-container {
       /* background-color: #e9dfcf; */
         /* border: 2rem solid black; */
-        max-width: 100%;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        position: relative
+        width: 100vw;
+        height: 100vh;
     }
       #main-content {
-          width: 100%;
-          height: 100%;
+          width: 100vw;
+          height: 100vh;
+          /* display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center; */
           display: grid;
-          grid-template-rows: 1% 14% 15% 40% 29% 1%;
-          grid-template-columns: 5% 5% 80% 5% 5%;   
+          grid-template-rows: 1% 14% 10% 5% 50% 19% 1%;
+          grid-template-columns: 5% 5% 80% 5% 5%; 
+          border-radius: 0;
+          padding: 0;
+          margin: auto;
+          /* text-align: center; */
       }
       #circle-top-div {
         grid-row: 1 / 2;
@@ -71,8 +89,8 @@
       #contact-info {
         /* text-align: center; */
         padding-top: -100px;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         margin-top: 0;
           border-radius: 50%;
       }
@@ -97,49 +115,66 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        font-size: 17px;
+        border-bottom: 2px dotted #262626;
       }
       #summary {
-          border-top: 2px dotted #262626;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          /* justify-content: center; */
           align-items: center;
-          padding: 0 1rem 0 1rem;
+          padding-top: 2rem;
           margin: 0;
-          grid-row: 4 / 5;
+          grid-row: 5 / 6;
           grid-column: 3 / 4;
           line-height: 1.75;
           /* padding-top: 3rem; */
       }
       .description {
-        font-size: 12px;
+        font-size: 16px;
       }
       #banner-div {
           grid-row: 2 / 3;
           grid-column: 3 / 4;
       }
       #banner {
-        font-size: 35px;
+        margin: auto;
+        font-size: 40px;
       }
       #project-titles-div {
-        margin-top: 2rem;
-          grid-row: 3 / 4;
+          margin-top: 10px;
+          grid-row: 4 / 5;
           grid-column: 3 / 4;
-          padding: 1rem 0 1rem 0;
+          padding: 0;
           display: flex;
           justify-content: space-evenly;
+          flex-basis: 100%;
       }
       h4{
         margin: 0;
       }
       .project-title {
-          font-size: 1rem;
-          text-decoration: none;
+        font-size: 20px;
+        padding: 5px;
       }
       .project-title a {
-        color:#425a77;
-        text-shadow: 1px 1px 1px rgb(238, 244, 255);
+        /* padding: 8px; */
+        /* background-color: rgb(238, 244, 255);
+        background: radial-gradient(white, rgb(238, 244, 255)); */
+        /* text-shadow: 1px 1px 10px #425a77; */
+        /* border: 2px solid black; */
+        /* color:#425a77; */
+        /* font-style: italic; */
+        /* text-decoration: 2px underline #425a77; */
+        /* text-shadow: 1px 1px 1px rgb(238, 244, 255); */
+      }
+      .project-img {
+        max-width: 300px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        border-radius: 7px;
       }
       #projects-all {
         grid-row: 5 / 6;
@@ -159,6 +194,10 @@
         font-size: 1.25rem;
         text-align: center;
 
+      }
+      #links-div {
+        width: 60%;
+        text-align: center;
       }
       #contact-links {
           padding-top: 2rem;

@@ -1,10 +1,12 @@
 html {
-    overflow: hidden;
+    overflow: clip;
     font-family: 'Manrope', sans-serif;
 }
 body {
     margin: 0;
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 section {
   position: relative
@@ -37,8 +39,8 @@ footer {
   background-color:#262626
 }
 #main {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 10% 80% 10%;
@@ -69,16 +71,9 @@ footer {
      
 }
 #main-content {
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 5rem;
-    overflow: hidden; */
-    /* backdrop-filter: blur(20px); */
     width: 100%;
     height: 100%;
     display: grid;
-    /* position: relative; */
     grid-template-rows: 1% 10% 14% 50% 24% 1%;
     grid-template-columns: 1% 4% 20% 50% 20% 4% 1%;   
     overflow: visible;
@@ -87,8 +82,6 @@ footer {
     padding: 0;
     /* box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2); */
     border-radius: 7px;
-    /* background-color: antiquewhite;
-    box-shadow: inset 0px 0px 60px 60px #E7CEA6; */
 }
 #bar-top {
   /* background-color: #0A6EBD; */
@@ -368,12 +361,14 @@ footer {
     grid-row: 4 / 5;
     grid-column: 3 / 4;
     visibility: hidden;
-    padding: 2rem 0 0 1rem;
+    padding: 1rem 0 0 0;
 }
 .project {
     display: flex;
     align-items: start;
+    justify-content: center;
     padding: none;
+    text-align: center;
 }
 h4{
   margin: 1rem;
@@ -381,26 +376,56 @@ h4{
 .project-title {
     cursor: pointer;
     flex-wrap: nowrap;
-    text-decoration: underline;
-    font-size: 1.25rem;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgb(238, 244, 255);
+    font-size: 22px;
+}
+.proj-link-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.proj-link {
+  padding: 5px;
+  margin-top: 2rem;
+  background-color: rgb(191, 191, 191);
+  border-radius: 7px;
+  box-shadow: 0 0 5px 5px grey;
+  text-align: center;
+}
+.project-img {
+  max-width: 500px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  /* border-radius: 7px; */
+  box-shadow: 0px 0px 1px 0px rgb(88, 88, 88);
 }
 #proj-list-div {
   padding-top: 3rem;
   height: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between
 }
 #proj-list-div li {
   list-style-type: circle;
 }
 #introduction {
+  margin: 0;
+  padding-bottom: 1rem;
   font-size: 1.75rem;
 }
 .website-link {
   text-decoration: underline 2px;
   color:#274a7c;
   text-shadow: 1px 1px 2px #b1c6df;
+  text-align: center;
+}
+#links-div {
+  width: 50%;
+  text-align: center;
 }
 #contact-links {
     padding-top: 5rem;

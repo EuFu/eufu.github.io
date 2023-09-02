@@ -311,7 +311,7 @@ footer {
 #summary {
     /* max-width: 50%;
     margin: 2rem; */
-    padding: 3rem 1rem 0 1rem;
+    padding: 3rem;
     grid-row: 4 / 5;
     grid-column: 4 / 5;
     line-height: 1.5;

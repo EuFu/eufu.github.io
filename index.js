@@ -176,6 +176,7 @@ function changeStyle(prev, target) {
   prevBar.classList.remove("display-el")
   prevBar.classList.add("scale-out-center")
   prevCircle.classList.remove(prevEl.entrance)
+  prevCircle.classList.remove(prevGradient)
   prevCircle.classList.add(prevEl.exit)
   main.classList.add("fade-out-forward")
   new Promise((resolve, reject) => {
@@ -187,13 +188,15 @@ function changeStyle(prev, target) {
     prevBar.classList.add("remove-el")
     main.classList.remove(prevGradient)
     main.classList.add(targetGradient)
-    banner.style.color = "#0A6EBD"
+    // banner.style.color = "#0A6EBD"
+    nav.style.borderLeft = "2px solid white"
     contactInfo.style.display = "none"
     prevCircle.classList.add("hide-el")
     targetBar.classList.remove("remove-el")
     targetBar.classList.add("display-el")
     targetCircle.classList.remove("hide-el")
     targetCircle.classList.add(targetEl.entrance)
+    targetCircle.classList.add(targetGradient)
     targetCircle.classList.add("show-el")
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -236,7 +239,7 @@ function changeStyleContact(prev, target) {
     prevBar.classList.add("remove-el")
     main.classList.remove(prevGradient)
     main.classList.add(targetGradient)
-    banner.style.color = "#dbe4ef"
+    nav.style.borderLeft = "none"
     prevCircle.classList.add("hide-el")
     targetBar.classList.remove("remove-el")
     targetBar.classList.add("display-el")
@@ -268,11 +271,18 @@ function displayElements() {
   });
 }
 
+// Delay function to display project titles 
+function showTitles() {
+  setTimeout(() => {
+    projectTitles.style.visibility = "visible";
+  }, 400)
+}
+
 // Change section banner 
 function changeBanner(key) {
   banner.innerHTML = titleMap.get(key);
   key === "projects"
-    ? (projectTitles.style.visibility = "visible")
+    ? showTitles()
     : (projectTitles.style.visibility = "hidden");
 }
 

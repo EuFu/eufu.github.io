@@ -99,7 +99,7 @@ section {
           grid-column: 3 / 4;   
           margin-left: 0;
           font-size: 12px;
-          border-left: none;
+          border-left: none !important;
       }
       #my-name {
         grid-row: 3 / 4;
@@ -116,7 +116,7 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 17px;
+        font-size: 14px;
         border-bottom: 2px dotted #262626;
       }
       #summary {
@@ -144,18 +144,21 @@ section {
       }
       #project-titles-div {
           margin-top: 10px;
+          margin-left: 0;
           grid-row: 4 / 5;
           grid-column: 3 / 4;
           padding: 0;
           display: flex;
+          flex-direction: row;
           justify-content: space-evenly;
           flex-basis: 100%;
+          border-right: none;
       }
-      h4{
+      .project {
         margin: 0;
       }
       .project-title {
-        font-size: 20px;
+        font-size: 14px;
         padding: 5px;
       }
       .project-title a {
@@ -198,6 +201,9 @@ section {
       #links-div {
         width: 60%;
         text-align: center;
+      }
+      #contact-info {
+        font-size: 16px;
       }
       #contact-links {
           padding-top: 2rem;

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&family=Lilita+One&family=Manrope:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800&family=Lilita+One&family=Manrope:wght@700&display=swap&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -43,7 +43,7 @@
                 <div id="banner-div" class="remove-el">
                   <span id="banner">Welcome</span>
                 </div>
-                <br>
+                <br />
                 <div id="nav" class="remove-el">
                   <!-- <p>Short Summary</p> -->
                   <div id="nav-list">
@@ -63,25 +63,26 @@
                     </ul>
                   </div>
                 </div>
-                <div id="project-titles-div" class="remove-el">
-                  <div class="project">
+                <ul id="project-titles-div" class="remove-el fa-ul">
+                  <li class="project ">
                     <!-- <h1 id="sniff-out-title" class="project-title"><a href="https://sniff-out-app.onrender.com/" target="_blank">Sniff Out</a></h1> -->
-                    <h4 id="sniff-out-title" class="project-title">
-                      <a>Sniff Out</a>
-                    </h4>
-                  </div>
-                  <div class="project">
+                    <span id="sniff-out-title" class="project-title">
+                      <i class="fa-solid fa-dog"></i><a>Sniff Out</a>
+                    </span>
+                    
+                  </li>
+                  <li class="project">
                     <!-- <h1 id="recipe-app-title" class="project-title"><a href="https://eufu.github.io/Recipe-App/" target="_blank">Recipe App</a></h1> -->
-                    <h4 id="recipe-app-title" class="project-title">
-                      <a>Recipe App</a>
-                    </h4>
-                  </div>
-                </div>
+                    <span id="recipe-app-title" class="project-title">
+                      <i class="fa-solid fa-utensils"></i><a>Recipe App</a>
+                    </span>
+                  </li>
+                </ul>
                 <!-- <div class="spacer"></div> -->
                 <div id="summary">
                   <div class="description" id="hello">
                     <button id="next" class="heartbeat">
-                      <span id="click-me">Click!</span>
+                      <span id="click-me"><i class="fa-solid fa-angles-up fa-2xl"></i></span>
                     </button>
                   </div>
                   <div class="topic-desc">
@@ -89,7 +90,7 @@
                       <h2 id="introduction">Hello, nice to meet you!</h2>
                       I'm Eugene, an aspiring web developer and self-taught
                       programmer looking to learn and build in this exciting and
-                      ever changing digital landscape. Here you can learn more
+                      ever changing digital landscape. Learn more
                       about me, see what I've worked on, and reach out!
                     </span>
                   </div>
@@ -100,14 +101,14 @@
                       console log of 'hello world,' I've learned a few things
                       and built some projects along the way!
                       <p>
-                        Besides programming I also share passions for cooking,
+                        Besides programming I share passions for cooking,
                         music, traveling, and being a cool uncle.
                       </p>
                     </span>
                   </div>
                   <div class="topic-desc">
                     <span class="description remove-el" id="projects-all"
-                      >Projects built using what I've learned. A mixture of:
+                      >Projects completed using a mixture of:
                       <div id="proj-list-div">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -117,6 +118,7 @@
                         <span>Bulma</span>
                         <span>Sass</span>
                       </div>
+                      <span>This page was built using HTML, CSS, Vanilla Javascript with help from the Animista animation library.</span>
                     </span>
                   </div>
                   <div class="topic-desc">
@@ -147,8 +149,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="description remove-el" id="sniff-out"> 
-                    <span class="" 
+                  <div class="description remove-el" id="sniff-out">
+                    <span class=""
                       >During the pandemic many people found themselves wanting
                       to become a pet owner, myself included. Sniff out is a
                       simple quiz game and a fun way for dog lovers to identify
@@ -156,27 +158,29 @@
                     </span>
                     <br />
                     <div class="proj-link-div">
-                    <div class="proj-link">
-                      <a
-                        class="website-link"
-                        href="https://sniff-out-app.onrender.com/"
-                        target="_blank"
-                      >
-                        <img
-                          class="project-img"
-                          src="../images/SniffOutScreenShot.png"
-                        />
-                        <br />
-                        <span class="view-link"
-                          >View
-                          <i class="fa-solid fa-square-arrow-up-right fa-sm"></i
-                        ></span>
-                      </a>
+                      <div class="proj-link">
+                        <a
+                          class="website-link"
+                          href="https://sniff-out-app.onrender.com/"
+                          target="_blank"
+                        >
+                          <img
+                            class="project-img"
+                            src="../images/SniffOutScreenShot.png"
+                          />
+                          <br />
+                          <span class="view-link"
+                            >View
+                            <i
+                              class="fa-solid fa-square-arrow-up-right fa-sm"
+                            ></i
+                          ></span>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  </div>
                   <div class="description remove-el" id="recipe-app">
-                    <span class="" 
+                    <span class=""
                       >Cooking and exploring new cuisines is something I've
                       always loved to explore. This recipe app allows you to
                       create your own recipes when your feeling adventurous, or
@@ -184,26 +188,26 @@
                     </span>
                     <br />
                     <div class="proj-link-div">
-                    <div class="proj-link">
-                      <a
-                        class="website-link"
-                        href="https://eufu.github.io/Recipe-App/"
-                        target="_blank"
-                      >
-                        <img
-                          class="project-img"
-                          src="../images/RecipeAppScreenShot.png"
-                        />
-                        <br />
-                        <span class="view-link"
-                          >View
-                          <i
-                            class="fa-solid fa-square-arrow-up-right fa-sm"
-                          ></i>
-                        </span>
-                      </a>
+                      <div class="proj-link">
+                        <a
+                          class="website-link"
+                          href="https://eufu.github.io/Recipe-App/"
+                          target="_blank"
+                        >
+                          <img
+                            class="project-img"
+                            src="../images/RecipeAppScreenShot.png"
+                          />
+                          <br />
+                          <span class="view-link"
+                            >View
+                            <i
+                              class="fa-solid fa-square-arrow-up-right fa-sm"
+                            ></i>
+                          </span>
+                        </a>
+                      </div>
                     </div>
-                  </div>
                   </div>
                 </div>
                 <!-- <div class="spacer"></div> -->
